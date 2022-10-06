@@ -3,6 +3,7 @@ body{
 }
 
 #truck{
+  width: 100%;
   max-width: 650px;
   display: block;
   margin: 0 auto;
