@@ -48,6 +48,6 @@ autoclicker.onclick = () => {
     }
     numberOfAutoclickerCookies++;
     autoclickerPrice *= 2;
-    autoclicker.innerHTML = `Počet: ${autoclickerPrice}`;
+    autoclicker.innerHTML = `Buy autoclicker: ${autoclickerPrice}`;
   }
 };
