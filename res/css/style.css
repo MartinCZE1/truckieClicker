@@ -21,6 +21,9 @@ button {
 }
 
 @media all and (max-width: 550px) {
+  body{
+    background-color: red;
+  }
   #counter {
     font-size: 20pt;
   }
