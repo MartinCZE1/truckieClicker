@@ -1,2 +1,2 @@
 # truckieClicker
-[View](https://www.martincze1.github.io/truckieClicker)
+[View](https://martincze1.github.io/truckieClicker)
