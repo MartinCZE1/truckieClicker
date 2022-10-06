@@ -2,11 +2,14 @@ const truck = document.getElementById("truck");
 const counter = document.getElementById("counter");
 const upgrade = document.getElementById("upgrade");
 const upgrade2 = document.getElementById("upgrade2");
+const autoclicker = document.getElementById("autoclicker");
 
 let numberOfCookies = 0;
 let numberOfCookiesOnClick = 1;
 let upgradePrice = 50;
 let upgrade2Price = 200;
+let autoclickerPrice = 1000;
+let numberOfAutoclickerCookies = 0;
 
 truck.onclick = () => {
   numberOfCookies += numberOfCookiesOnClick;
@@ -30,5 +33,21 @@ upgrade2.onclick = () => {
     upgrade2.innerHTML = `Buy better upgrade: ${upgrade2Price}`;
     numberOfCookiesOnClick += 10;
     counter.innerHTML = `Počet: ${numberOfCookies}`;
+  }
+};
+
+autoclicker.onclick = () => {
+  if (numberOfCookies >= autoclickerPrice) {
+    numberOfCookies -= autoclickerPrice;
+    counter.innerHTML = `Počet: ${numberOfCookies}`;
+    if (numberOfAutoclickerCookies == 0) {
+      setInterval(() => {
+        numberOfCookies += numberOfAutoclickerCookies;
+        counter.innerHTML = `Počet: ${numberOfCookies}`;
+      }, 1000);
+    }
+    numberOfAutoclickerCookies++;
+    autoclickerPrice *= 2;
+    autoclicker.innerHTML = `Počet: ${autoclickerPrice}`;
   }
 };
