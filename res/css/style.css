@@ -1,21 +1,30 @@
-body{
-  background-color: #E7E7E7;
+body {
+  background-color: #e7e7e7;
 }
 
-#truck{
+#truck {
   width: 100%;
   max-width: 650px;
   display: block;
   margin: 0 auto;
 }
 
-#counter{
+#counter {
   font-size: 30pt;
   text-align: center;
 }
 
-button{
+button {
   margin: 0 auto;
   display: block;
   font-size: 24pt;
+}
+
+@media all and (max-width: 550px) {
+  #counter {
+    font-size: 20pt;
+  }
+  button {
+    font-size: 14pt;
+  }
 }
