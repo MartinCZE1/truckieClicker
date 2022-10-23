@@ -1,5 +1,6 @@
 body {
-  background-color: #e7e7e7;
+  background-color: #fff;
+  font-family: 'Varela Round', sans-serif;
 }
 
 #truck {
@@ -7,6 +8,12 @@ body {
   max-width: 650px;
   display: block;
   margin: 0 auto;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#truck:hover{
+  transform: scale(1.2);
 }
 
 #counter {
@@ -18,6 +25,14 @@ button {
   margin: 0 auto;
   display: block;
   font-size: 24pt;
+  margin-top: 1%;
+  width: 30%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.2);
 }
 
 @media all and (max-width: 550px) {
